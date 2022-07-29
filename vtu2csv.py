@@ -18,6 +18,11 @@ for root, subdirectories, files in os.walk(input_directory):
                                 os.remove(os.path.join(
                                     input_directory, patient, simulation, file))
                                 continue
+                            if file.startswith("Data_0000"):
+                                # Delete the file
+                                os.remove(os.path.join(
+                                    input_directory, patient, simulation, file))
+                                continue
                             # Get the four digit number from the file name: Data_0000.vtu
                             number = int(file.split("_")[1].split(".")[0]) * 50
 
@@ -32,6 +37,8 @@ for root, subdirectories, files in os.walk(input_directory):
 
                             # horizontally stack to become a 4 column matrix
                             stack = numpy.hstack((points, density))
+                            stack = numpy.delete(stack,numpy.where(stack[:,3] == 0),axis=0)
+
                             # Write the data to a csv file
                             numpy.savetxt(os.path.join(input_directory, patient, simulation, str(
                                 number) + ".csv"), stack, delimiter=",", fmt="%f")
