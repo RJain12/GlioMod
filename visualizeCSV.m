@@ -1,4 +1,5 @@
-arr = table2array(wzeros);
+file = "CSVFileFromVTU2CSV";
+arr = table2array(file);
 
 tumor_x = arr(:,1);
 tumor_y = arr(:,2);
