@@ -1,10 +1,7 @@
-%XTrain = cell(5400,1);
-%YTrain = cell(5400,1);
-
-% Create autoencoder to bring image into latentspace
+numPatients = 6;
 
 dayStruct = {};
-for k = 1:6
+for k = 1:numPatients
     myFolder = "/Users/rishabjain/Desktop/rsi/procDataCSV/P"+k+"_dat";
     theFiles50 = dir(fullfile(myFolder, '**/50.csv'));
     theFiles100 = dir(fullfile(myFolder, '**/100.csv'));
