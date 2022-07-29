@@ -1,13 +1,19 @@
-# Info
+# Project Details
 
-GlioMod: Spatiotemporal-Aware Glioblastoma Multiforme Tumor Growth Modeling with Deep Encoder-Decoder Networks Rishab Kumar Jain
+GlioMod: Spatiotemporal-Aware Glioblastoma Multiforme Tumor Growth Modeling with Deep Encoder-Decoder Networks
 
-Under the direction of
-Pierre F. J. Lermusiaux
+Rishab Kumar Jain
+
+Under the direction of Pierre F. J. Lermusiaux
+
 Professor of Mechanical Engineering
+
 Massachusetts Institute of Technology
 
+Mentors: Wael Hajj Ali & Abhinav Gupta
+
 Research Science Institute
+
 August 1, 2022
 
 # Code
