@@ -47,7 +47,7 @@ for root, subdirectories, files in os.walk(input_directory):
                    continue
                else:
                    # run gliomasolver
-                   N = "8"
+                   N = "4"
                    os.environ["OMP_NUM_THREADS"] = N
                    program = "brain"
                    model = "RD"
