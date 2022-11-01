@@ -10,7 +10,7 @@ Professor of Mechanical Engineering
 
 Massachusetts Institute of Technology
 
-Mentors: Wael Hajj Ali & Abhinav Gupta
+Mentors: Wael H. Ali & Abhinav Gupta
 
 Research Science Institute
 
